@@ -20,7 +20,7 @@ Como exemplo, podemos dizer que alguém que tenha o perfil de introversão, intu
 ------------
 
 ### Dataset
-Como base de treinamento, usei um dataset de 8676 registros contendo apenas dois campos (type e posts) por linha, com textos extraídos do Twitter (em inglês) já classificados pelo MBTI.
+Como base de treinamento, foi usado um dataset de 8676 registros contendo apenas dois campos (type e posts) por linha, com textos extraídos do Twitter (em inglês) já classificados pelo MBTI.
 
 **Fonte:** https://www.kaggle.com/datasets/datasnaek/mbti-type?resource=download
 
