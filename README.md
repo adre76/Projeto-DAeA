@@ -45,5 +45,5 @@ Especificamente, para cada termo em nosso conjunto de dados, calcularemos uma me
 
 ### Storytelling
 - [x] Para ilustração, exibir a quantidade de vezes que cada perfil MBTI aparece no dataset
-- [x] Mostrar quais unigramas e bigramas aparecem são mais relevantes para cada tipo de MBTI
+- [x] Mostrar quais unigramas e bigramas são mais relevantes para cada tipo de MBTI
 - [ ] Receber um texto e classificá-lo automaticamente com um perfil MBTI
