@@ -3,7 +3,7 @@
 
 ------------
 
-**Objetivo:** Através de um texto digitado pelo usuário, determinar sua personalidade baseado em um aprendizado de máquina cuja fonte são postagens do Twitter (em inglês).
+**Objetivo:** Através de um texto digitado pelo usuário, determinar sua personalidade, baseado em um aprendizado de máquina cuja fonte são postagens do Twitter (em inglês).
 
 **Descrição:**
 O Myers Briggs Type Indicator (MBTI sigla em inglês) é um sistema de tipo de personalidade que divide os seres humanos em 16 tipos de personalidades distintas, em 4 eixos:
@@ -40,3 +40,10 @@ Especificamente, para cada termo em nosso conjunto de dados, calcularemos uma me
 - norm: 12. Garante que todos os nossos vetores de características tenham uma norma euclidiana de 1.
 - ngram_range: 1,2. Indica que queremos considerar unigramas e bigramas.
 - stop_words: english. Remove todos os pronomes comuns da lingua ( "a", "the", ...) para reduzir o número de recursos ruidosos.
+
+------------
+
+### Storytelling
+- Para ilustração, exibir a quantidade de vezes que cada perfil MBTI aparece no dataset
+- Mostrar quais unigramas e bigramas aparecem são mais relevantes para cada tipo de MBTI
+- Receber um texto e classificá-lo automaticamente com um perfil MBTI
