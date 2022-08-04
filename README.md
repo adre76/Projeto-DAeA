@@ -3,7 +3,7 @@
 
 ------------
 
-**Objetivo:** Através de um texto digitado pelo usuário, determinar sua personalidade, baseado em um aprendizado de máquina cuja fonte são postagens do Twitter (em inglês).
+**Objetivo:** Através de um texto digitado pelo usuário, determinar sua personalidade baseado em um aprendizado de máquina cuja fonte são postagens do Twitter (em inglês).
 
 **Descrição:**
 O Myers Briggs Type Indicator (MBTI sigla em inglês) é um sistema de tipo de personalidade que divide os seres humanos em 16 tipos de personalidades distintas, em 4 eixos:
