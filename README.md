@@ -1,6 +1,6 @@
 # PROJETO APLICADO: Data Architecture &amp; Analysis
 
-### Predição de personalidade baseada no indicador MBTI.
+### Predição de personalidade baseada no indicador MBTI
 
 ------------
 
