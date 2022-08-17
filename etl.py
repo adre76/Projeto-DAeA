@@ -75,7 +75,9 @@ list_reg = df_vol['server'].unique()
 for reg in list_reg:
     globals()[f'df_vol_{reg}'] = df_vol[df_vol['server'].str.contains(reg)]
 
-# GERANDO GRÁFICOS COM O SEABORN - Crescimento de uso de uma das partições do servidor TSM_OPRJO
+# GERANDO GRÁFICOS COM O SEABORN
+# - Crescimento de uso de uma das partições do servidor TSM_OPRJO (/tsm_fpool)
+# - Utilização de uma das partições do servidor TSM_OPSPO (/tsm_fpool_disco)
 TSM_OPRJO_fpool = df_vol_TSM_OPRJO[df_vol_TSM_OPRJO['particao'] == '/tsm_fpool']
 #TSM_OPRJO_fpool = TSM_OPRJO_fpool.drop_duplicates(subset='porcentagem')
 TSM_OPRJO_fpool.reset_index(drop=True, inplace=True)
@@ -84,3 +86,14 @@ fpool = sns.lineplot(data = TSM_OPRJO_fpool, x = 'data', y = 'porcentagem')
 fpool.set_xlabel('Data', fontsize = 10)
 fpool.set_ylabel('% de espaço livre', fontsize = 10)
 fpool.set_title('TSM OPRJO - /fpool')
+TSM_OPRJO_fpool.head()
+# ---------------------------------
+TSM_OPBSA_activelog = df_vol_TSM_OPBSA[df_vol_TSM_OPBSA['particao'] == '/tsm_activelog']
+TSM_OPBSA_activelog.reset_index(drop=True, inplace=True)
+print(TSM_OPBSA_activelog['porcentagem'].iloc[-1])
+valor = [TSM_OPBSA_activelog['porcentagem'].iloc[-1], 100 - int(TSM_OPBSA_activelog['porcentagem'].iloc[-1])]
+legenda = ['Em uso', 'Livre']
+cores = sns.color_palette('pastel')[0:5]
+plt.figure(figsize = (10,4))
+plt.pie(valor, labels = legenda, colors = cores, autopct='%.0f%%', textprops={'color':"w"})
+plt.show()

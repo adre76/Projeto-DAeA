@@ -1,20 +1,29 @@
 # PROJETO APLICADO: Data Architecture &amp; Analysis
-### Extração de dados de espaço em disco utilizado pelo sistema de backup para geração de gráficos
+### Professor: Nicolas Marcos de Moraes Oliveira - Curso: MBA em BI & Data Science
+### Aluno: André Luís dos Reis Pereira - Matrícula: 2022.05.17910-9
+
 
 ------------
 
 **Descrição:**
-Código Python que faz a ingestão de dados históricos de espaço em disco dos servidores de backup e gera gráficos para .
+Códigos Python que fazem a ingestão de dados históricos de espaço em disco dos servidores de backup e gera gráficos para .
 
-### Dataset
-Como base de treinamento, foi usado um dataset de 8676 registros contendo apenas dois campos (type e posts) por linha, com textos extraídos do Twitter (em inglês) já classificados pelo MBTI.
+**Fonte:** Dados coletados dos servidores de backup da Superintendência de Operações do SERPRO.
 
-**Fonte:** https://www.kaggle.com/datasets/datasnaek/mbti-type?resource=download
+### Datasets
+Arquivos .csv separados por informações de backup e informações de volumetria de disco dos servidores de backup.
 
-**Descritivo da base:** 
+**Descritivo das bases:** 
 
-| type        | posts                        |
-|-------------|------------------------------|
-| Código MBTI | Texto de postagem no Twitter |
+**coletas.csv**
 
+| nodename             | datainicio               | status                       | result                      | datafim                   | server             |
+|----------------------|--------------------------|------------------------------|-----------------------------|---------------------------|--------------------|
+| Nodename do servidor | Data de início do backup | Status do processo de backup | Alertas gerados na execução | Data de término do backup | Servidor de backup |
+
+**particoes.csv**
+
+| particao         | total               | usado                    | livre                    | porcentagem                   | server             | data                     |
+|------------------|---------------------|--------------------------|--------------------------|-------------------------------|--------------------|--------------------------|
+| Nome da partição | Tamanho da partição | Volume usado da partição | Volume livre da partição | Porcentagem usada da partição | Servidor de backup | Data de coleta dos dados |
 ------------
