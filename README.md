@@ -6,9 +6,9 @@
 ------------
 
 **Descrição:**
-Códigos Python que fazem a ingestão de dados históricos de espaço em disco dos servidores de backup e gera gráficos para .
+Códigos Python que fazem a ingestão de dados históricos de utilização de espaço em disco dos servidores de backup e gerar gráficos para apresentação em um dashboard que dá suporte à operação e tomada de decisão sobre a escalabilidade da solução.
 
-**Fonte:** Dados coletados dos servidores de backup da Superintendência de Operações do SERPRO.
+**Fonte:** Dados descaracterizados e coletados de uma fonta pública do governo.
 
 ### Datasets
 Arquivos .csv separados por informações de backup e informações de volumetria de disco dos servidores de backup.
